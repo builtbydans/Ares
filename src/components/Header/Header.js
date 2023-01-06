@@ -1,16 +1,19 @@
+import {BrowserRouter as Router, Link} from "react-router-dom";
 import './Header.css'
-import BrandLogo from '../../assets/ares_logo.png'
+import BrandLogo from '../../assets/ares-logo.png'
 
 function Header() {
   return (
     <>
-      <header className="container">
-        <img src={BrandLogo} alt="brand-logo" width={100} />
-        <nav>
-          <a href="#about">About</a>
-          <a href="#work">Work</a>
-          <a href="#contact">Contact</a>
-        </nav>
+      <header>
+        <div className="nav-area">
+          <img src={BrandLogo} alt="brand-logo" width={100}/>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
       </header>
     </>
   )

@@ -4,7 +4,7 @@ import BestSelling from './components/BestSelling/BestSelling';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <Header />
       <BestSelling />
     </div>
