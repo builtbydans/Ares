@@ -1,12 +1,12 @@
 import './App.css';
-import Header from './components/Header'
-import TopSelling from './components/TopSelling';
+import Header from './components/Header/Header'
+import BestSelling from './components/BestSelling/BestSelling';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <TopSelling />
+      <BestSelling />
     </div>
   );
 }
