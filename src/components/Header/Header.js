@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Link} from "react-router-dom";
 import './Header.css'
-import BrandLogo from '../../assets/ares-logo.png'
+import BrandLogo from '../../assets/images/ares-logo.png'
 
 function Header() {
   return (

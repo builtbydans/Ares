@@ -1,13 +1,13 @@
 import ProductCard from '../ProductCard/ProductCard'
-import NikeOne from '../../assets/nike1.jpeg'
-import NikeTwo from '../../assets/nike2.jpeg'
-import NikeThree from '../../assets/nike3.jpeg'
-import NikeFour from '../../assets/nike4.jpeg'
+import NikeOne from '../../assets/images/nike1.jpeg'
+import NikeTwo from '../../assets/images/nike2.jpeg'
+import NikeThree from '../../assets/images/nike3.jpeg'
+import NikeFour from '../../assets/images/nike4.jpeg'
 import './BestSelling.css';
 
 function BestSelling() {
   return (
-    <>
+    <>q
       <h3>Best Selling</h3>
       <div className="row">
         <ProductCard img={NikeOne} name="Nike Furyosas" price="£140"/>
