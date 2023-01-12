@@ -1,20 +1,27 @@
 import ProductCard from '../ProductCard/ProductCard'
-import NikeOne from '../../assets/images/nike1.jpeg'
-import NikeTwo from '../../assets/images/nike2.jpeg'
-import NikeThree from '../../assets/images/nike3.jpeg'
-import NikeFour from '../../assets/images/nike4.jpeg'
+import Data from '../../data/db.json';
 import './BestSelling.css';
 
 function BestSelling() {
   return (
-    <>q
+    <>
       <h3>Best Selling</h3>
+
       <div className="row">
-        <ProductCard img={NikeOne} name="Nike Furyosas" price="£140"/>
-        <ProductCard img={NikeTwo} name="Nike AF 1 '70'" price="£110"/>
-        <ProductCard img={NikeThree} name="Air Max Scorpion" price="£225" />
-        <ProductCard img={NikeFour} name="Air Force 1 Utility" price="£135"/>
+        {Data.map((data) => {
+          return <ProductCard
+                  key={data.id}
+                  img={process.env.PUBLIC_URL + data.image}
+                  name={data.name}
+                  price={data.price}
+                  />
+        })}
       </div>
+
+      <p>TO DO:
+         1. Plan how you're going to make the website, design this on Figma.
+         2. For the REST API, use npm json-server.
+      </p>
     </>
   )
 }

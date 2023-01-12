@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Nike Furyosas",
+    "price": 140,
+    "image": "images/nike1.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Nike AF 1 '70",
+    "price": 110,
+    "image": "images/nike2.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Nike Air Max Scorpion",
+    "price": 225,
+    "image": "images/nike3.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Nike AF1 Utility",
+    "price": 135,
+    "image": "images/nike4.jpeg"
+  }
+]
