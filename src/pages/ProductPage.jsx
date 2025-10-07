@@ -1,12 +1,11 @@
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 import products from "../data/products";
-import ItemSizes from "../components/ProductPage/ItemSizes";
-import QuantitySelector from "../components/ProductPage/QuantitySelector";
-import AddToCart from "../components/ProductPage/AddToCart";
-import AdditionalInfo from "../components/ProductPage/AdditionalInfo";
-import MayAlsoLike from "../components/ProductPage/MayAlsoLike";
-import VideoHero from "../components/ProductPage/VideoHero";
+import ItemSizes from "../components/sections/ProductPage/ItemSizes";
+import QuantitySelector from "../components/sections/ProductPage/QuantitySelector";
+import AddToCart from "../components/sections/ProductPage/AddToCart";
+import AdditionalInfo from "../components/sections/ProductPage/AdditionalInfo";
+import MayAlsoLike from "../components/sections/ProductPage/MayAlsoLike";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -67,7 +66,6 @@ const ProductPage = () => {
           </section>
         </section>
       </div>
-      <VideoHero videoSrc={"/videos/hero_vid.mp4"} />
       <MayAlsoLike currentId={product.id} product={product} />
     </>
   );

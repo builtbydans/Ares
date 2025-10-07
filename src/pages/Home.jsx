@@ -1,11 +1,9 @@
 import products from "../data/products";
-import ProductCard from "../components/ProductCard";
-import VideoHero from "../components/ProductPage/VideoHero";
+import ProductCard from "../components/ui/ProductCard";
 
 const Home = () => {
   return (
     <div>
-      <VideoHero videoSrc="/videos/hero_vid.mp4" />
       <h1 className="mb-6">
         HOME | COLLECTION -- FIX THIS HEADER AND THIS COMPONENT
       </h1>
