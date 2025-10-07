@@ -4,13 +4,16 @@ import Home from "./pages/Home";
 import ProductPage from "./pages/ProductPage";
 import Checkout from "./pages/Checkout";
 import Cart from "./pages/Cart";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
         <Navbar />
-        <main className="p-6">
+        <main>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductPage />} />
@@ -18,6 +21,7 @@ export default function App() {
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

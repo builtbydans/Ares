@@ -2,8 +2,10 @@ const products = [
   {
     id: 1,
     name: "Fishtail jacket",
-    description: "Soft cotton tee, perfect for everyday wear.",
-    price: 20,
+    description:
+      "Wide-leg trousers with an all-over paisley print, a belted waist, a five-pocket design, and a zip and button fastening.",
+    model: "Model: 186 cm tall and size M",
+    price: 129,
     sizes: ["S", "M", "L", "XL"],
     imageUrl: "/images/jacket",
   },
@@ -25,10 +27,10 @@ const products = [
   },
   {
     id: 4,
-    name: "Casual sweatshirt",
+    name: "Cashmere Crew-Neck Jumper",
     description: "Lightweight sneakers built for comfort and speed.",
     price: 80,
-    sizes: ["7", "8", "9", "10", "11"],
+    sizes: ["S", "M", "L", "XL"],
     imageUrl: "/images/jumper",
   },
   {
@@ -37,7 +39,7 @@ const products = [
     description: "Soft cotton tee, perfect for everyday wear.",
     price: 20,
     sizes: ["S", "M", "L", "XL"],
-    imageUrl: "/images/jacket",
+    imageUrl: "/images/gilet",
   },
   {
     id: 6,
@@ -45,7 +47,7 @@ const products = [
     description: "Warm hoodie with front pocket and adjustable hood.",
     price: 40,
     sizes: ["S", "M", "L", "XL"],
-    imageUrl: "/images/hoodie",
+    imageUrl: "/images/overshirt",
   },
   {
     id: 7,
@@ -53,7 +55,7 @@ const products = [
     description: "Stylish denim jacket with a modern fit.",
     price: 60,
     sizes: ["S", "M", "L", "XL"],
-    imageUrl: "/images/tshirt",
+    imageUrl: "/images/joggers",
   },
   {
     id: 8,
@@ -61,7 +63,7 @@ const products = [
     description: "Lightweight sneakers built for comfort and speed.",
     price: 80,
     sizes: ["7", "8", "9", "10", "11"],
-    imageUrl: "/images/jumper",
+    imageUrl: "/images/beanie",
   },
 ];
 

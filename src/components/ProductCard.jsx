@@ -15,8 +15,8 @@ const ProductCard = ({ product }) => {
           }
           className="cursor-pointer w-full object-cover"
         />
-        <h2 className="tracking-tight">{product.name}</h2>
-        <p className="tracking-tight">£{product.price}</p>
+        <h2>{product.name}</h2>
+        <p>£{product.price}</p>
       </Link>
     </article>
   );
