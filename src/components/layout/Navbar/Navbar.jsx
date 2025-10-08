@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import WishlistHeart from "./WishlistHeart";
 
-const Navbar = () => {
+const Navbar = ({ wishlist }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -19,6 +20,7 @@ const Navbar = () => {
           {isHovered ? "アレス" : "ARESU"}
         </Link>
         <div className="flex gap-4">
+          <WishlistHeart wishlist={wishlist} />
           <Link to="/cart" className="hover:text-blue-600">
             Cart
           </Link>

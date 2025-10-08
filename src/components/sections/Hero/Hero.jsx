@@ -5,7 +5,7 @@ const Hero = ({ onEnter }) => {
 
   const handleClick = () => {
     setIsExiting(true);
-    setTimeout(onEnter, 800); // wait for CSS transition before removing
+    setTimeout(onEnter, 800);
   };
 
   return (
