@@ -7,7 +7,7 @@ import AddToCart from "../components/sections/ProductPage/AddToCart";
 import AdditionalInfo from "../components/sections/ProductPage/AdditionalInfo";
 import MayAlsoLike from "../components/sections/ProductPage/MayAlsoLike";
 
-const ProductPage = () => {
+const ProductPage = ({ wishlist, toggleWishlist }) => {
   const { id } = useParams();
   const product = products.find((p) => p.id === Number(id)); // convert id to number
   const [selectedSize, setSelectedSize] = useState("S");
@@ -37,7 +37,17 @@ const ProductPage = () => {
         </section>
 
         <section className="basis-[35%] px-10 mt-10">
-          <h4 className="text-2xl font-bold">{product.name}</h4>
+          <div className="flex items-baseline gap-10 justify-between">
+            <h4 className="text-2xl font-bold">{product.name}</h4>
+            <button
+              onClick={() => toggleWishlist(product)}
+              className="border-1 p-2 hover:bg-zinc-100"
+            >
+              {wishlist.some((item) => item.id === product.id)
+                ? "remove from wishlist"
+                : "add to wishlist"}
+            </button>
+          </div>
           <p className="text-gray-600 font-bold text-xl mt-2">
             £{product.price} GBP
           </p>
@@ -66,7 +76,12 @@ const ProductPage = () => {
           </section>
         </section>
       </div>
-      <MayAlsoLike currentId={product.id} product={product} />
+      <MayAlsoLike
+        currentId={product.id}
+        product={product}
+        wishlist={wishlist}
+        toggleWishlist={toggleWishlist}
+      />
     </>
   );
 };

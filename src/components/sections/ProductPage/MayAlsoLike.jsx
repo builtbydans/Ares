@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import ProductCard from "../../ui/ProductCard";
 import products from "../../../data/products";
 
-const MayAlsoLike = ({ currentId }) => {
+const MayAlsoLike = ({ currentId, wishlist, toggleWishlist }) => {
   const [randomProducts, setRandomProducts] = useState([]);
 
   useEffect(() => {
@@ -20,7 +19,12 @@ const MayAlsoLike = ({ currentId }) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6 w-full">
           {randomProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard
+              key={product.id}
+              product={product}
+              wishlist={wishlist}
+              toggleWishlist={toggleWishlist}
+            />
           ))}
         </div>
       </div>
