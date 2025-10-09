@@ -9,6 +9,7 @@ import Footer from "./components/layout/Footer";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import Hero from "./components/sections/Hero/Hero";
 import Wishlist from "./pages/Wishlist";
+import PageNotFound from "./pages/PageNotFound";
 
 const App = () => {
   const [showHero, setShowHero] = useState(true);
@@ -82,6 +83,7 @@ const App = () => {
             />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </main>
         <Footer />

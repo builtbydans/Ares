@@ -6,6 +6,7 @@ import QuantitySelector from "../components/sections/ProductPage/QuantitySelecto
 import AddToCart from "../components/sections/ProductPage/AddToCart";
 import AdditionalInfo from "../components/sections/ProductPage/AdditionalInfo";
 import MayAlsoLike from "../components/sections/ProductPage/MayAlsoLike";
+import PageNotFound from "./PageNotFound";
 
 const ProductPage = ({ wishlist, toggleWishlist }) => {
   const { id } = useParams();
@@ -13,7 +14,7 @@ const ProductPage = ({ wishlist, toggleWishlist }) => {
   const [selectedSize, setSelectedSize] = useState("S");
 
   if (!product) {
-    return <h1 className="text-2xl">Product not found</h1>; // RETURN 404 PAGE;
+    return <PageNotFound />;
   }
 
   const sizeLabel = selectedSize
